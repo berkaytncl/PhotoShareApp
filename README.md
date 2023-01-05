@@ -1,2 +1,2 @@
 # PhotoShareApp
-https://github.com/Berkaytncl/PhotoShareApp.git
+You can share your photos with other users within the application.
