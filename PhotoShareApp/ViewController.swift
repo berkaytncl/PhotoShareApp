@@ -10,6 +10,9 @@ import Firebase
 
 class ViewController: UIViewController {
     
+    let errorTitleInput = "Error"
+    let errorMessageInput = "Please enter valid email or password!"
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -21,22 +24,37 @@ class ViewController: UIViewController {
 
     @IBAction func loginClicked(_ sender: Any) {
         
+        if checkEmailPassword() {
+            //log in user
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { authDataResult, error in
+                if error != nil {
+                    self.errorMessage(titleInput: self.errorTitleInput, messageInput: error?.localizedDescription ?? self.errorMessageInput)
+                } else {
+                    
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+            
+        } else {
+            self.errorMessage(titleInput: errorTitleInput, messageInput: errorMessageInput)
+        }
+        
     }
     
     @IBAction func signupClicked(_ sender: Any) {
         
-        if checkSignUp() {
+        if checkEmailPassword() {
             //sign up user
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { authDataResult, error in
                 if error != nil {
-                    self.errorMessage(titleInput: "Error", messageInput: error?.localizedDescription ?? "Please enter valid email or password!")
+                    self.errorMessage(titleInput: self.errorTitleInput, messageInput: error?.localizedDescription ?? self.errorMessageInput)
                 } else {
                     self.performSegue(withIdentifier: "toFeedVC", sender: nil)
                 }
             }
             
         } else {
-            errorMessage(titleInput: "Error", messageInput: "Please enter valid email or password!")
+            errorMessage(titleInput: errorTitleInput, messageInput: errorMessageInput)
         }
         
     }
@@ -48,7 +66,7 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func checkSignUp() -> Bool {
+    func checkEmailPassword() -> Bool {
         emailTextField.text != "" && emailTextField.text != nil && passwordTextField.text != "" && passwordTextField.text != nil
     }
 }
