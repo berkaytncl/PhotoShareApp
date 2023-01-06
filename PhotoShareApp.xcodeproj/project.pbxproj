@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBCA4B9629684E30000EDCA8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA4B9529684E30000EDCA8 /* FeedViewController.swift */; };
+		EBCA4B9829684E72000EDCA8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA4B9729684E72000EDCA8 /* UploadViewController.swift */; };
+		EBCA4B9A29684E82000EDCA8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA4B9929684E82000EDCA8 /* SettingsViewController.swift */; };
+		EBCE4B8B29670712005B927F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBCE4B8A29670712005B927F /* GoogleService-Info.plist */; };
 		EBFDF0782966F17B004293A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF0772966F17B004293A8 /* AppDelegate.swift */; };
 		EBFDF07A2966F17B004293A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF0792966F17B004293A8 /* SceneDelegate.swift */; };
 		EBFDF07C2966F17B004293A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF07B2966F17B004293A8 /* ViewController.swift */; };
 		EBFDF07F2966F17B004293A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFDF07D2966F17B004293A8 /* Main.storyboard */; };
 		EBFDF0812966F17C004293A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFDF0802966F17C004293A8 /* Assets.xcassets */; };
 		EBFDF0842966F17C004293A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFDF0822966F17C004293A8 /* LaunchScreen.storyboard */; };
+		ED57EF73D5B7AA3B5B56838F /* Pods_PhotoShareApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4750840D120AF057900326C5 /* Pods_PhotoShareApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129C2ED0AF12FEE2DA6D9372 /* Pods-PhotoShareApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShareApp.debug.xcconfig"; path = "Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4750840D120AF057900326C5 /* Pods_PhotoShareApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoShareApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F146AB254733B7C2428D9A /* Pods-PhotoShareApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShareApp.release.xcconfig"; path = "Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp.release.xcconfig"; sourceTree = "<group>"; };
+		EBCA4B9529684E30000EDCA8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EBCA4B9729684E72000EDCA8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		EBCA4B9929684E82000EDCA8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EBCE4B8A29670712005B927F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBFDF0742966F17B004293A8 /* PhotoShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFDF0772966F17B004293A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFDF0792966F17B004293A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED57EF73D5B7AA3B5B56838F /* Pods_PhotoShareApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AD3DC5B6EA6DE5436778850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				129C2ED0AF12FEE2DA6D9372 /* Pods-PhotoShareApp.debug.xcconfig */,
+				C3F146AB254733B7C2428D9A /* Pods-PhotoShareApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C2229E7FF85E5FB17CB75971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4750840D120AF057900326C5 /* Pods_PhotoShareApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBFDF06B2966F17B004293A8 = {
 			isa = PBXGroup;
 			children = (
 				EBFDF0762966F17B004293A8 /* PhotoShareApp */,
 				EBFDF0752966F17B004293A8 /* Products */,
+				3AD3DC5B6EA6DE5436778850 /* Pods */,
+				C2229E7FF85E5FB17CB75971 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +91,14 @@
 				EBFDF0772966F17B004293A8 /* AppDelegate.swift */,
 				EBFDF0792966F17B004293A8 /* SceneDelegate.swift */,
 				EBFDF07B2966F17B004293A8 /* ViewController.swift */,
+				EBCA4B9529684E30000EDCA8 /* FeedViewController.swift */,
+				EBCA4B9729684E72000EDCA8 /* UploadViewController.swift */,
+				EBCA4B9929684E82000EDCA8 /* SettingsViewController.swift */,
 				EBFDF07D2966F17B004293A8 /* Main.storyboard */,
 				EBFDF0802966F17C004293A8 /* Assets.xcassets */,
 				EBFDF0822966F17C004293A8 /* LaunchScreen.storyboard */,
 				EBFDF0852966F17C004293A8 /* Info.plist */,
+				EBCE4B8A29670712005B927F /* GoogleService-Info.plist */,
 			);
 			path = PhotoShareApp;
 			sourceTree = "<group>";
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBFDF0882966F17C004293A8 /* Build configuration list for PBXNativeTarget "PhotoShareApp" */;
 			buildPhases = (
+				B19CAF0E60443F8B78D78DE4 /* [CP] Check Pods Manifest.lock */,
 				EBFDF0702966F17B004293A8 /* Sources */,
 				EBFDF0712966F17B004293A8 /* Frameworks */,
 				EBFDF0722966F17B004293A8 /* Resources */,
+				0BBF656C8AABFEC04D36A6DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBFDF0842966F17C004293A8 /* LaunchScreen.storyboard in Resources */,
+				EBCE4B8B29670712005B927F /* GoogleService-Info.plist in Resources */,
 				EBFDF0812966F17C004293A8 /* Assets.xcassets in Resources */,
 				EBFDF07F2966F17B004293A8 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +172,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BBF656C8AABFEC04D36A6DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B19CAF0E60443F8B78D78DE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoShareApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBFDF0702966F17B004293A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBFDF07C2966F17B004293A8 /* ViewController.swift in Sources */,
+				EBCA4B9829684E72000EDCA8 /* UploadViewController.swift in Sources */,
 				EBFDF0782966F17B004293A8 /* AppDelegate.swift in Sources */,
+				EBCA4B9629684E30000EDCA8 /* FeedViewController.swift in Sources */,
 				EBFDF07A2966F17B004293A8 /* SceneDelegate.swift in Sources */,
+				EBCA4B9A29684E82000EDCA8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +366,7 @@
 		};
 		EBFDF0892966F17C004293A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 129C2ED0AF12FEE2DA6D9372 /* Pods-PhotoShareApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +395,7 @@
 		};
 		EBFDF08A2966F17C004293A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F146AB254733B7C2428D9A /* Pods-PhotoShareApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
