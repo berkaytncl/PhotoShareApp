@@ -48,20 +48,37 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
             let imageRef = mediaFolder.child("\(uuidString).jpg")
             imageRef.putData(data) { storageMetadata, error in
                 
-                if let _ = error {
-                    self.errorMessage(titleInput: "Error", messageInput: error?.localizedDescription ?? "Could not upload file")
+                if let error = error {
+                    
+                    self.errorMessage(titleInput: "Error", messageInput: error.localizedDescription)
+                    
                 } else {
                     
                     imageRef.downloadURL { url, error in
                         if error == nil {
                             let imageUrl = url?.absoluteString
-                            print(imageUrl)
+                            
+                            if let imageUrl = imageUrl {
+                                
+                                let db = Firestore.firestore()
+                                let firestorePost = [
+                                    "imageurl" : imageUrl,
+                                    "comment" : self.commentTextField.text,
+                                    "email" : Auth.auth().currentUser!.email,
+                                    "tarih" : FieldValue.serverTimestamp() ] as [String : Any]
+                                
+                                db.collection("Post").addDocument(data: firestorePost) { err in
+                                    if let err = err {
+                                        self.errorMessage(titleInput: "Error", messageInput: err.localizedDescription)
+                                    } else {
+                                        print("Document added with ID: \(ref!.documentID)")
+                                    }
+                                }
+                            }
                         }
                     }
-                    
                 }
             }
-            
         }
     }
     
