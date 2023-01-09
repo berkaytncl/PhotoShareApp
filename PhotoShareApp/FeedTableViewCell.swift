@@ -9,6 +9,8 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
 
+    static let height: CGFloat = 300.0
+    
     @IBOutlet weak var emailText: UILabel!
     @IBOutlet weak var commentText: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
