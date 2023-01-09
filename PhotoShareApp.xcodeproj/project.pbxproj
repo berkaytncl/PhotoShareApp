@@ -12,6 +12,7 @@
 		EBCA4B9829684E72000EDCA8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA4B9729684E72000EDCA8 /* UploadViewController.swift */; };
 		EBCA4B9A29684E82000EDCA8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA4B9929684E82000EDCA8 /* SettingsViewController.swift */; };
 		EBCE4B8B29670712005B927F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBCE4B8A29670712005B927F /* GoogleService-Info.plist */; };
+		EBD6E561296CAF6C005D5424 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6E560296CAF6C005D5424 /* Post.swift */; };
 		EBFDF0782966F17B004293A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF0772966F17B004293A8 /* AppDelegate.swift */; };
 		EBFDF07A2966F17B004293A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF0792966F17B004293A8 /* SceneDelegate.swift */; };
 		EBFDF07C2966F17B004293A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF07B2966F17B004293A8 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		EBCA4B9729684E72000EDCA8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		EBCA4B9929684E82000EDCA8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EBCE4B8A29670712005B927F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBD6E560296CAF6C005D5424 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EBFDF0742966F17B004293A8 /* PhotoShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFDF0772966F17B004293A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFDF0792966F17B004293A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				EBCA4B9529684E30000EDCA8 /* FeedViewController.swift */,
 				EBCA4B9729684E72000EDCA8 /* UploadViewController.swift */,
 				EBCA4B9929684E82000EDCA8 /* SettingsViewController.swift */,
+				EBD6E560296CAF6C005D5424 /* Post.swift */,
 				EBFDF07D2966F17B004293A8 /* Main.storyboard */,
 				EBFDF0802966F17C004293A8 /* Assets.xcassets */,
 				EBFDF0822966F17C004293A8 /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 				EBFDF07C2966F17B004293A8 /* ViewController.swift in Sources */,
 				EBCA4B9829684E72000EDCA8 /* UploadViewController.swift in Sources */,
 				EB48F8B4296B0B8A00820E78 /* FeedTableViewCell.swift in Sources */,
+				EBD6E561296CAF6C005D5424 /* Post.swift in Sources */,
 				EBFDF0782966F17B004293A8 /* AppDelegate.swift in Sources */,
 				EBCA4B9629684E30000EDCA8 /* FeedViewController.swift in Sources */,
 				EBFDF07A2966F17B004293A8 /* SceneDelegate.swift in Sources */,
